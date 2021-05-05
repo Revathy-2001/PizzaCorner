@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>S Pizza Corner</title>
+  <link rel="stylesheet"  href="samplepizza.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class="head">Pizza Corner</div><br><br>
+      <img src = "Images/pizza.jpg"  class="pizza1">
+      <img src = "Images/pizza6.jpg" class="pizza6">
+      <img src = "Images/pizza5.jpg" class="pizza5">
+      <img src = "Images/pizza2.jpg" class="pizza2">
+      <img src = "Images/pizza3.jpg" class="pizza3">
+      <img src = "Images/pizza4.jpg" class="pizza4">  
+   </span>
+    <br><br><br><br>
+
+    <a href = "#vegpizza" class = "vegbtn">Veg Pizza</a>
+    <a href = "#nonvegpizza" class = "nonvegbtn">Non Veg Pizza</a>
+    <br><br>
+    <br><br>
+    <h1 id = "vegpizza"  style="color: #fff;">Veg Pizza</h1>
+    <br>
+    <span>
+      <b class="caption1">Regular &#8377 99</b>
+      <b class="caption2">Medium &#8377 165</b>
+      <b class="caption3">Large &#8377 400</b>
+    </span>
+    <br><br>
+    <span>
+      <img src="Images/regular.jpg" class="regular">
+      <img src="Images/large.jpg"   class="medium"> 
+      <img src="Images/medium.jpg"  class="medium"> 
+    </span>
+    <br><br>
+    <span>
+      
+     
+    </span>
+    <br><br>
+    <div class="box">
+    <span id="customerChoice1" class="content1">
+          <input type="radio" name = "regularCrust" id = "crustveg" value="cheeseCrust" checked><label for="crustveg">Cheese Crust-----------------<i class="cost">&#8377 70</i></label> <br> 
+          <input type="radio" name = "regularCrust" id = "crustveg1" value="wheatCrust"><label for="crustveg1">WheatThinCrust-------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio"  name = "regularVegToppings" id = "toppingsveg" value="vegToppings"><label for="toppingsveg">Veg Toppings ----------------<i class="cost">&#8377 85</i></label>  <br> 
+          <input type="radio"  name = "regularExtraCheese" id = "toppingsveg1" value="extraCheese" ><label for="toppingsveg1">Extra Cheese----------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio"   name = "regularCheeseDip" id = "dipveg" value="cheeseDip" ><label for="dipveg">Cheese Dips ----------------<i class="cost">&#8377 80</i ></label>  <br> 
+          <input type="radio"   name = "regularJalapenoDip" id = "dipveg1" value="jalepenoDip"><label for="dipveg1">Jalepeno Dip ----------------<i class="cost">&#8377 100</i></label><br><br>
+          <span class="vegregular">
+            <label for="regularquant">Quantity:</label>
+            <input type="number" id = "regularquant" name="Quantity"  min = "1" value="1">
+            <a href="#customerChoice1"><button onclick="addOrder('regularCrust','regularVegToppings','regularExtraCheese','regularCheeseDip','regularJalapenoDip','regularVeg',99,'regularquant')" id = "clickclr1" class = "add">Add +</button></a>
+         </span>
+    </span>
+  </div>
+    <div class="box"  style="position: absolute;top: 1530px;left: 410px;">
+    <span id="customerChoice2" class="content1">
+          <input type="radio" name = "mediumCrust" id = "crustveg" value="cheeseCrust" checked><label for="crustveg">Cheese Crust-----------------<i class="cost">&#8377 70</i></label> <br> 
+          <input type="radio" name = "mediumCrust" id = "crustveg1" value="wheatCrust"><label for="crustveg1">WheatThinCrust-------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio" name = "mediumVegToppings" id = "toppingsveg" value="vegToppings"><label for="toppingsveg">Veg Toppings ----------------<i class="cost">&#8377 85</i></label>  <br> 
+          <input type="radio" name = "mediumExtraCheese" id = "toppingsveg1" value="extraCheese"><label for="toppingsveg1">Extra Cheese----------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio" name = "mediumCheeseDip" id = "dipveg" value="cheeseDip"><label for="dipveg">Cheese Dips ----------------<i class="cost">&#8377 80</i ></label>  <br> 
+          <input type="radio" name = "mediumJalepenoDip" id = "dipveg1" value="jalepenoDip"><label for="dipveg1">Jalepeno Dip ----------------<i class="cost">&#8377 100</i></label><br><br>
+          <span class="vegmedium">
+          <label for="mediumquant">Quantity:</label>
+          <input type="number" id = "mediumquant" name="Quantity" min = "1" value="1">
+          <a href="#customerChoice2"><button onclick="addOrder('mediumCrust','mediumVegToppings','mediumExtraCheese','mediumCheeseDip','mediumJalapenoDip','mediumVeg',165,'mediumquant')" id = "clickclr2" class = "add">Add +</button></a>
+      </span>
+    </span>
+  </div>
+  <div class="box" style="position: absolute;top: 1530px;left: 820px;">
+    <span id="customerChoice3" class="content1">
+          <input type="radio" name = "largeCrust" id = "crustveg" value="cheeseCrust" checked><label for="crustveg">Cheese Crust-----------------<i class="cost">&#8377 70</i></label> <br> 
+          <input type="radio" name = "largeCrust" id = "crustveg1" value="wheatCrust"><label for="crustveg1">WheatThinCrust-------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio" name = "largeVegToppings" id = "toppingsveg" value="vegToppings"><label for="toppingsveg">Veg Toppings ----------------<i class="cost">&#8377 85</i></label>  <br> 
+          <input type="radio" name = "largeExtraCheese" id = "toppingsveg1" value="extraCheese"><label for="toppingsveg1">Extra Cheese----------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio" name = "largeCheeseDip" id = "dipveg" value="cheeseDip"><label for="dipveg">Cheese Dips ----------------<i class="cost">&#8377 80</i ></label>  <br> 
+          <input type="radio" name = "largeJalepenoDip" id = "dipveg1" value="jalepenoDip"><label for="dipveg1">Jalepeno Dip ----------------<i class="cost">&#8377 100</i></label><br><br>
+           <span class="veglarge">
+          <label for="largequant">Quantity: </label><input type="number" id = "largequant" name="Quantity" min = "1" value="1">
+          <a href="#customerChoice3"><button onclick="addOrder('largeCrust','largeVegToppings','largeExtraCheese','largeCheeseDip','largeJalapenoDip','largeVeg',400,'largequant')" id = "clickclr3" class = "add">Add +</button></a>
+      </span>
+    </span>
+  </div>
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+    <br><br><br>
+    <h1 id = "nonvegpizza"  style="color: #fff;">Non Veg Pizza</h1>
+    <br>
+     <span>
+      <b class="caption1">Regular &#8377 195</b>
+      <b class="caption2">Medium &#8377 300</b>
+      <b class="caption3">Large &#8377 500</b>
+    </span>
+    <br><br>
+    <span>
+      <img src="Images/regularnv.jpg"  class="regular">
+      <img src="Images/mediumnv2.png" class="medium"> 
+      <img src="Images/largenv2.jpg" class="medium"> 
+    </span>
+    <br><br>
+    <br><br><br>
+    <div class="box">
+     <span id="customerChoice4" class="content1">
+          <input type="radio" name = "nvRegularCrust" id = "crustveg" value="cheeseCrust" checked><label for="crustveg">Cheese Crust-----------------<i class="cost">&#8377 70</i></label> <br> 
+          <input type="radio" name = "nvRegularCrust" id = "crustveg1" value="wheatCrust"><label for="crustveg1">WheatThinCrust-------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio" name = "nvRegularVegToppings" id = "toppingsveg" value="vegToppings"><label for="toppingsveg">Veg Toppings ----------------<i class="cost">&#8377 85</i></label>  <br> 
+          <input type="radio" name = "nvRegularExtraCheese" id = "toppingsveg1" value="extraCheese"><label for="toppingsveg1">Extra Cheese----------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio" name = "nvRegularCheeseDip" id = "dipveg" value="cheeseDip"><label for="dipveg">Cheese Dips ----------------<i class="cost">&#8377 80</i ></label>  <br> 
+          <input type="radio" name = "nvRegularJalepenoDip" id = "dipveg1" value="jalepenoDip"><label for="dipveg1">Jalepeno Dip ----------------<i class="cost">&#8377 100</i></label><br><br>
+          <span class="vegregular">
+            <label for="nvRegularquant">Quantity:</label>
+            <input type="number" id = "nvRegularquant" name="Quantity"  min = "1" value="1">
+            <a href="#customerChoice4"><button onclick="addOrder('nvRegularCrust','nvRegularVegToppings','nvRegularExtraCheese','nvRegularCheeseDip','nvRegularJalapenoDip','RegularNonVeg',195,'nvRegularquant')" id = "clickclr4" class = "add">Add +</button></a>
+      </span>
+    </span>
+    </div>
+    <div class="box"  style="position: absolute;top: 2400px;left: 410px;">
+      <span id="customerChoice5" class="content1">
+          <input type="radio" name = "nvMediumCrust" id = "crustveg" value="cheeseCrust" checked><label for="crustveg">Cheese Crust-----------------<i class="cost">&#8377 70</i></label> <br> 
+          <input type="radio" name = "nvMediumCrust" id = "crustveg1" value="wheatCrust"><label for="crustveg1">WheatThinCrust-------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio" name = "nvMediumVegToppings" id = "toppingsveg" value="vegToppings"><label for="toppingsveg">Veg Toppings ----------------<i class="cost">&#8377 85</i></label>  <br> 
+          <input type="radio" name = "nvMediumExtraCheese" id = "toppingsveg1" value="extraCheese"><label for="toppingsveg1">Extra Cheese----------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio" name = "nvMediumCheeseDip" id = "dipveg" value="cheeseDip"><label for="dipveg">Cheese Dips ----------------<i class="cost">&#8377 80</i ></label>  <br> 
+          <input type="radio" name = "nvMediumJalepenoDip" id = "dipveg1" value="jalepenoDip"><label for="dipveg1">Jalepeno Dip ----------------<i class="cost">&#8377 100</i></label><br><br>
+          <span class="vegmedium">
+            <label for="nvMediumquant">Quantity:</label>
+            <input type="number" id = "nvMediumquant" name="Quantity" min = "1" value="1">
+            <a href="#customerChoice5"><button onclick="addOrder('nvMediumCrust','nvMediumVegToppings','nvMediumExtraCheese','nvMediumCheeseDip','nvMediumJalapenoDip','MediumNonVeg',300,'nvMediumquant')" id = "clickclr5" class = "add">Add +</button></a>
+          </span>
+      </span>
+    </div>
+    <div class="box" style="position: absolute;top: 2400px;left: 820px;">
+    <span id="customerChoice6" class="content1">
+          <input type="radio" name = "nvLargeCrust" id = "crustveg" value="cheeseCrust" checked><label for="crustveg">Cheese Crust-----------------<i class="cost">&#8377 70</i></label> <br> 
+          <input type="radio" name = "nvLargeCrust" id = "crustveg1" value="wheatCrust"><label for="crustveg1">WheatThinCrust-------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio" name = "nvLargeVegToppings" id = "toppingsveg" value="vegToppings"><label for="toppingsveg">Veg Toppings ----------------<i class="cost">&#8377 85</i></label>  <br> 
+          <input type="radio" name = "nvLargeExtraCheese" id = "toppingsveg1" value="extraCheese"><label for="toppingsveg1">Extra Cheese----------------<i class="cost">&#8377 75</i></label><br> 
+          <input type="radio" name = "nvLargeCheeseDip" id = "dipveg" value="cheeseDip"><label for="dipveg">Cheese Dips ----------------<i class="cost">&#8377 80</i ></label>  <br> 
+          <input type="radio" name = "nvLargeJalepenoDip" id = "dipveg1" value="jalepenoDip"><label for="dipveg1">Jalepeno Dip ----------------<i class="cost">&#8377 100</i></label><br><br>
+          <span class="veglarge">
+            <label for="nvLargequant">Quantity:</label>
+            <input type="number" id = "nvlargequant" name="Quantity" min = "1" value="1">
+            <a href="#customerChoice6"><button onclick="addOrder('nvLargeCrust','nvLargeVegToppings','nvLargeExtraCheese','nvLargeCheeseDip','nvLargeJalapenoDip','LargeNonVeg',500,'nvlargequant')" id = "clickclr6" class = "add">Add +</button></a>
+         </span>
+    </span>
+    </div>
+     <br><br><br><br><br><br>
+    <a href="#myform" class="buttonconfirm"><button onclick="openForm()"  
+      style = "background-color: rgb(28, 83, 103);outline: none;border: none;color: white;cursor: pointer;padding: 10px 20px;" class="confirmbutton">Confirm Order</button></a>
+    <div class="formPopup" id = "myform">
+      <div class="formContainer">
+         <br><br>
+         <label for="name">Name: </label>
+         <input type="text" id = "name" name="Name" placeholder="Enter Name" required><br>
+         <label for = 'phno'>Phone No:</label>
+         <input type="tel" id = "phno" name="PhoneNo"  pattern="[0-9]{3}[0-9]{4}[0-9]{3}" placeholder="Format:123-4567-123" required><br>
+         <a href="#btnpay"></a><button type="submit" onclick = "Submit()" class="submitbtn">Login</button></a>
+         <button type="button" class = "cancel" onclick="closeForm()">Close</button>
+      </div>
+    </div>
+    <br><br>
+    <div class="formPopup1" id = "Pay">
+      <div>
+        <h1>Total Amount is</h1><input type="text" id = "Amount" name="PaymentCash" readonly><br><br>   
+        <a href="#paymentbox"><button onclick="PaypopUp()" id = "btnpay" class="paybtn">Pay</button></a>
+      </div>
+    </div>
+    <br>
+    <div class="paypop" id = "paymentbox">
+     <input type="number"  id = "payment" name="CashPaid" placeholder="Pay Here  &#8377" min="1">
+     <img src="Images/okay.png" onclick = "Billing()" id="okay">
+    </div>
+  
+    <div class="FinalBill" id = "showbill">
+     <a href="#billboxpopup"><button onclick="Billing()" class="bill">Bill</button></a> 
+    </div>
+
+    <span class="billPopUp" id = "billboxpopup">
+      <label for="totamtans">Total Amount</label><br><input type="text" id = "totamtans" name="TotalAmt"  readonly><br><br>
+      <label for = "cashpaidans" >Cash Paid</label><br><input type="text" id = "cashpaidans" name="CashPaid" readonly><br><br>
+      <label for = "balance">Cash Returned</label><br><input type="text" id = "balance" name="Balance"  readonly><br><br>
+    </span> 
+    <script>
+        var total = 0;
+        var arr = [];
+        var cart = {};
+        var extras = {"cheeseCrust":70,"wheatCrust":75,"vegToppings":85,"extraCheese":75,"cheeseDip":80,"jalepenoDip":100};
+        function addOrder(crust,vegToppings,cheeseToppings,cheeseDip,cheeseJalepenoDip,size,price,quantity) {
+           if(price == 99)
+             document.getElementById("clickclr1").style.background = "rgb(13, 255, 250,0.4)";
+           if(price == 165)
+             document.getElementById("clickclr2").style.background = "rgb(13, 255, 250,0.4)";
+           if(price == 400)
+             document.getElementById("clickclr3").style.background = "rgb(13, 255, 250,0.4)";
+           if(price == 195)
+             document.getElementById("clickclr4").style.background = "rgb(13, 255, 250,0.4)";
+           if(price == 300)
+             document.getElementById("clickclr5").style.background = "rgb(13, 255, 250,0.4)";
+           if(price == 500)
+              document.getElementById("clickclr6").style.background = "rgb(13, 255, 250,0.4)";
+
+           if(cart.hasOwnProperty(size)) 
+              total -= cart[size][cart[size].length-1];
+           let tempTot = price;
+           arr.push(document.querySelector('input[name='+crust+']:checked').value);
+           let vt = document.querySelector('input[name='+vegToppings+']:checked');
+           let ct = document.querySelector('input[name='+cheeseToppings+']:checked');
+           let cd = document.querySelector('input[name='+cheeseDip+']:checked');
+           let cjd = document.querySelector('input[name='+cheeseJalepenoDip+']:checked');
+           tempTot += extras[arr[0]];
+           if(vt != null  ) {
+               tempTot += extras[vt.value]
+               arr.push(vt.value);
+           }
+           if(ct != null  ) {
+              tempTot += extras[ct.value];
+              arr.push(ct.value);
+           }
+           if(cd != null  ) {
+             tempTot += extras[cd.value];
+             arr.push(cd.value);
+           }
+           if(cjd != null  ) {
+              tempTot += extras[cjd.value];
+              arr.push(cjd.value);
+           }
+           let qt = parseInt(document.getElementById(quantity).value);
+           arr.push(qt);
+           tempTot *= qt;
+           arr.push(tempTot);
+           cart[size] = arr;
+           arr = [];
+           total += tempTot;
+           console.log(total); 
+        }
+        function openForm(){
+          document.getElementById('myform').style.display = "block";
+          // document.getElementById('Pay').style.display = "block";
+          
+        }
+        function closeForm(){
+          document.getElementById('myform').style.display = "none";
+        }
+         function PaypopUp(){
+          var paymententered = false;
+          var getpaybox = document.getElementById('paymentbox');
+          getpaybox.style.display = "block";
+        }
+        function Billing(){
+           var paycash = document.getElementById("payment").value;
+           var amt = document.getElementById("Amount").value;
+           if(paycash >= amt && paycash != ""){
+             document.getElementById("payment").style.display = "none";
+             document.getElementById('billboxpopup').style.display = "block";
+             var cashpaid = document.getElementById("payment").value;
+             var balance =  cashpaid - total;
+             var totamt = document.getElementById('totamtans');
+             totamt.value = total;
+             var cashp = document.getElementById("cashpaidans");
+             cashp.value = cashpaid;
+             var bal = document.getElementById("balance");
+             bal.value = balance;
+          }
+          else{
+            alert("Payment not accepted!")
+          }
+
+        }
+        function Submit(){
+          var valuesaccepted = false;
+          var name = document.getElementById('name').value;
+          var tel = document.getElementById('phno').value;
+          if(name == "" && tel == "")
+            alert("Please fill out the fields!")
+          else if(name == "")
+            alert("Please fill out the name Field!")
+          else if(tel == "")
+            alert("Please fill out the Phone Number field!")
+          else{
+            if(name.match(/^[a-zA-Z\s]+$/) && tel.match(/^[0-9]+$/) && tel.length == 10){
+              alert("your Values are accepted!")
+              valuesaccepted = true;
+            }
+            else if (!name.match(/^[a-zA-Z\s]+$/))
+              alert("Give Valid Name!")
+            else if(!tel.match(/^[0-9]+$/))
+              alert("Enter Valid Number")
+            else if(tel.length != 10)
+              alert("Enter Only ten numbers!")
+          }
+          if(valuesaccepted == true){
+             if(total == 0)
+                 alert("Seems like you haven't selected any Pizza!")
+             else 
+               document.getElementById('Pay').style.display = "block";
+               document.getElementById('Amount').value = total;
+          }
+        }
+        console.log(cart);
+    </script>
+<br><br>
+</body>
+</html>
